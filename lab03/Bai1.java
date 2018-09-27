@@ -2,15 +2,15 @@ package bai1;
 import java.util.Scanner;
 
 public class Bai1 {
-  
     public static int ucln(int a , int b){
-        int so = 0 ;
-        for(int i = 1 ; i < a || i < b ; i++)
+        while(a!=b)
         {
-            if(a%i ==0 && b%i == 0)
-                so = i;
+         if(a>b)
+             a = a -b;
+         else
+             b = b -a;
         }
-        return so;
+        return a;
     }
     public static int fibonaxi(int[] a, int n){
         a[0] = 0;
