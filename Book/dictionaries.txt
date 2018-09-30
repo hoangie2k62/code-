@@ -1,0 +1,7 @@
+hello	xin chao
+goodbye	tam biet
+fan	cai quat
+home	nha
+phone	dien thoai
+find	tim kiem
+go	di
