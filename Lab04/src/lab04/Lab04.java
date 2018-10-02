@@ -7,47 +7,25 @@ public class Lab04 {
         return Math.max(a, b);
     }
     
-    public static int minArray(int[] a, int size){
-        int min = 0;
-        for(int i = 1; i< size; i++){
-            min = Math.min(a[i],a[i-1]);
+    public static int minArray(int[] a){
+        if(a.length == 0) return 1;
+        int min = a[0];
+        for(int i = 0; i< a.length; i++){
+            min = Math.min(a[i],min);
         }
         return min;
     }
     
-    public static double BMI(double weigh, double high){
+    public static String  BMI(double weigh, double high){
         double bmi = weigh / ( high * high);
-        DecimalFormat df = new DecimalFormat("0.00");
-        bmi = Double.parseDouble(df.format(bmi));
-        return bmi;
+        if(bmi < 18.5)
+            return "Thieu can";
+        if(bmi >= 18.5 && bmi < 23)
+            return "Binh thuong";
+        if(bmi >=23 && bmi <=24.99)
+            return "Thua can";
+        return "Beo phi";
     }
     
-    public static void main(String[] args) {
-          Scanner sc = new Scanner(System.in);
-          int s1, s2;
-          s1 = sc.nextInt();
-          s2 = sc.nextInt();
-          int max = max(s1,s2);
-          System.out.println("Max la:" + max);
-          
-          int size = sc.nextInt();
-          int[] arr = new int[size];
-          for(int i=0; i<size; i++)
-              arr[i] = sc.nextInt();
-          int min = minArray(arr,size);
-          System.out.println("Min la:" + min);
-          
-          double weigh = sc.nextDouble();
-          double high = sc.nextDouble();
-          double bmi =  BMI(weigh,high);
-          if(bmi < 18.5)
-             System.out.println("Thieu can");
-          if(bmi >= 18.5 && bmi <= 24.99)
-            System.out.println("Binh thuong");
-          if(bmi >=23 && bmi <=24.99)
-            System.out.println("Thua can");
-          if(bmi > 25)
-            System.out.println("Beo phi");
-    }
     
 }

@@ -83,46 +83,41 @@ public class Lab04Test {
     @Test
     public void testMinArray1() {
         System.out.println("minArray");
-        int size = 6;
-        int[] a = new int[size];
+        int[] a = {2,3,1,4,5,6};
         int expResult = a[2];
-        int result = Lab04.minArray(a, size);
+        int result = Lab04.minArray(a);
         assertEquals(expResult, result);
     }
     @Test
     public void testMinArray2() {
         System.out.println("minArray");
-        int size = 4;
-        int[] a = new int[size];
+        int[] a = {2,1,3,4};
         int expResult = a[1];
-        int result = Lab04.minArray(a, size);
+        int result = Lab04.minArray(a);
         assertEquals(expResult, result);
     }
     @Test
     public void testMinArray3() {
         System.out.println("minArray");
-        int size = 10;
-        int[] a = new int[size];
+        int[] a = {3,1,2,3,0,4,5,6,7,8};
         int expResult = a[4];
-        int result = Lab04.minArray(a, size);
+        int result = Lab04.minArray(a);
         assertEquals(expResult, result);
     }
     @Test
     public void testMinArray4() {
         System.out.println("minArray");
-        int size = 7;
-        int[] a = new int[size];
+        int[] a = {1,2,3,4,5,6,7};
         int expResult = a[0];
-        int result = Lab04.minArray(a, size);
+        int result = Lab04.minArray(a);
         assertEquals(expResult, result);
     }
     @Test
     public void testMinArray() {
         System.out.println("minArray");
-        int size = 5;
-        int[] a = new int[size];
+        int[] a = {4,3,2,1,0};
         int expResult = a[4];
-        int result = Lab04.minArray(a, size);
+        int result = Lab04.minArray(a);
         assertEquals(expResult, result);
     }
     /**
@@ -133,44 +128,44 @@ public class Lab04Test {
         System.out.println("BMI");
         double weigh = 40;
         double high = 1.5;
-        double expResult = 17.78;
-        double result = Lab04.BMI(weigh, high);
-        assertEquals(expResult, result, 00.00);
+        String expResult = "Thieu can";
+        String result = Lab04.BMI(weigh, high);
+        assertEquals(expResult, result);
     }
     @Test
     public void testBMI2() {
         System.out.println("BMI");
         double weigh = 50;
         double high = 1.6;
-        double expResult = 19.53;
-        double result = Lab04.BMI(weigh, high);
-        assertEquals(expResult, result, 00.00);
+        String expResult = "Binh thuong";
+        String result = Lab04.BMI(weigh, high);
+        assertEquals(expResult, result);
     }
     @Test
     public void testBMI3() {
         System.out.println("BMI");
         double weigh = 60;
         double high = 1.7;
-        double expResult = 20.76;
-        double result = Lab04.BMI(weigh, high);
-        assertEquals(expResult, result, 00.00);
+        String expResult = "Binh thuong";
+        String result = Lab04.BMI(weigh, high);
+        assertEquals(expResult, result);
     }
     @Test
     public void testBMI4() {
         System.out.println("BMI");
         double weigh = 70;
         double high = 1.8;
-        double expResult = 21.60;
-        double result = Lab04.BMI(weigh, high);
-        assertEquals(expResult, result, 00.00);
+        String expResult = "Binh thuong";
+        String result = Lab04.BMI(weigh, high);
+        assertEquals(expResult, result);
     }
     @Test
     public void testBMI5() {
         System.out.println("BMI");
         double weigh = 80;
         double high = 1.9;
-        double expResult = 22.16;
-        double result = Lab04.BMI(weigh, high);
-        assertEquals(expResult, result, 00.00);
+        String expResult = "Binh thuong";
+        String result = Lab04.BMI(weigh, high);
+        assertEquals(expResult, result);
     }
 }
