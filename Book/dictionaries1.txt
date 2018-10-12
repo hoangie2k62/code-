@@ -1,0 +1,21 @@
+bye	tam biet
+hello	xin chao
+house	nha
+dog	cho
+cat	meo
+children	tre con
+pink	mau hong
+school	truong
+yellow	mau vang
+red	mau do
+green	mau xanh
+white	trang
+name	ten
+why	tai sao
+black	mau den
+what	gi?
+how	nhu the nao
+music	am nhac
+class	lop
+hi	xin chao
+where	o dau
