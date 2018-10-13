@@ -1,10 +1,9 @@
-﻿Adam	﻿A Dong
+﻿Adam	A Dong
 Arhant, Lohan (follower of Buddha)	A La Hán
 Alexander	A Lịch Sơn
 Alexandre de Rhodes	A Lịch Sơn Đắc Lộ
 Afghanistan; Afghanistani, Afghan	A Phú Hãn
 Amnida Buddha; thank heavens!	A di đà phật
-Adam	A đam
 Oh!, What a pity!	A, tội nghiệp quá
 Egypt, Egyptian	Ai Cập
 Egyptology	Ai Cập học
@@ -12,7 +11,6 @@ Laos, Laotian	Ai Lao
 Nobody asked you to do that!	Ai khiến anh!
 Annam, Annamese, Annamite	An Nam
 Albania	An ba ni
-England	Anh Cát Lợi
 Anglo-American	Anh Mỹ
 England	Anh Quốc
 British pound, pound sterling	Anh kim
@@ -20,7 +18,6 @@ English mile	Anh lý
 English language	Anh ngữ
 poor English	Anh ngữ kém
 Poland	Ba Lan
-Paris	Ba Lê
 (the) Balkans	Ba Nhĩ Cán
 Brazil, Brazilian	Ba Tây
 Persia, Persian, Iran, Iranian	Ba Tư
@@ -34827,3 +34824,4 @@ bifocal	song tiêu
 both complete	song toàn
 dicotyledon	song tử diệp
 parents	song đường
+hello	xin chao

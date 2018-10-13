@@ -13,8 +13,8 @@ public class DictionaryApplication extends DictionaryManagement{
             String line;
             while((line = reader.readLine()) != null)
             {
-                String[] sepa = line.trim().split("\t");
-                Word word = new Word(sepa[0].trim(),sepa[1].trim());;
+                String[] sepa = line.split("\t");
+                Word word = new Word(sepa[0], sepa[1]);;
                 mydic.extra(word);
             }
             reader.close();

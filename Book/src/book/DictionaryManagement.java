@@ -3,6 +3,7 @@ import java.util.*;
 import java.io.*;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 
 public class DictionaryManagement {
     protected Scanner sc  = new Scanner(System.in);
@@ -10,6 +11,7 @@ public class DictionaryManagement {
     protected String viet;
     protected Dictionary mydic = new Dictionary();
     protected int pos = -1;
+    protected File file = new File("dictionaries.txt");
     
     public void insertFromCommandline() {  // lan 1.
         System.out.print("So luong tu vung la: ");
@@ -25,7 +27,6 @@ public class DictionaryManagement {
     }
     
     public void insertFromFile(){   // lan 2.
-        File file = new File("dictionaries.txt");
         try {
             FileReader fileReader = new FileReader(file);
             BufferedReader reader = new BufferedReader(fileReader);
@@ -33,8 +34,8 @@ public class DictionaryManagement {
             String line;
             while((line = reader.readLine()) != null)
             {
-                String[] sepa = line.trim().split("\t");
-                Word word = new Word(sepa[0].trim(),sepa[1].trim());
+                String[] sepa = line.split("\t");
+                Word word = new Word(sepa[0],sepa[1]);
                 mydic.extra(word);
             }
             reader.close();
@@ -100,9 +101,13 @@ public class DictionaryManagement {
         }
         label.setText(viet);
     }
+    public void outputText(TextArea textfield, String text){
+        viet = dictionaryLookup(text.trim());
+        textfield.setText(viet);
+    }
+    
     
     public void dictionaryExportToFile(){    // xuat du lieu tu dien hien tai ra file.
-        File file = new File("dictionaries.txt");
         try{
             PrintWriter pw = new PrintWriter(file);
             for(int i = 0; i < mydic.size(); i++){

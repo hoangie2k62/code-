@@ -14,7 +14,7 @@ public class Book extends Application {
         try{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Scene scene = new Scene(root);
-        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("Addstyle.css").toExternalForm());
         stage.setTitle("Dictionary");
         stage.setScene(scene);
         stage.show();
