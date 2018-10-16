@@ -22,6 +22,12 @@ public class Circle extends Shape {
        this.bankinh.setValue(bankinh);
     }
     
+    public Circle(double x, double y, String mau, double bankinh){
+        setPosX(x);
+        setPosY(y);
+        setMau(mau);
+        this.bankinh.setValue(bankinh);
+    }
     public String toString(){
         return "Circle";
     }

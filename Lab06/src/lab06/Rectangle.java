@@ -37,7 +37,13 @@ public class Rectangle extends Shape{
         this.dai.setValue(dai);
         this.rong.setValue(rong);
     }
-    
+    public Rectangle(double x, double y, String mau, double a, double b){
+        setPosX(x);
+        setPosY(y);
+        setMau(mau);
+        this.dai.setValue(a);
+        this.rong.setValue(b);
+    }
     public String toString(){
         return "Rectangle";
     }

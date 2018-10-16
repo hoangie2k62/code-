@@ -1,53 +1,79 @@
 package lab06;
 
+import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
 public class Triangle extends Shape{
-    private IntegerProperty canhA = new SimpleIntegerProperty();
-    private IntegerProperty canhB = new SimpleIntegerProperty();
-    private IntegerProperty canhC = new SimpleIntegerProperty();
-
-    public IntegerProperty canhAProperty() {
-        return canhA;
+    private DoubleProperty Ax = new SimpleDoubleProperty();
+    private DoubleProperty Ay = new SimpleDoubleProperty();
+    private DoubleProperty Bx = new SimpleDoubleProperty();
+     private DoubleProperty By = new SimpleDoubleProperty();
+    
+    public DoubleProperty aXProperty() {
+        return Ax;
     }
 
-    public void setCanhA(int canhA) {
-        this.canhA.setValue(canhA);
+    public void setAx(double x) {
+        this.Ax.setValue(x);
     }
     
-    public int getCanhA(){
-        return canhA.get();
+    public double getAx(){
+        return Ax.get();
     }
-    public IntegerProperty canhBProperty() {
-        return canhB;
-    }
-
-    public void setCanhB(int canhB) {
-        this.canhB.setValue(canhB);
-    }
-    
-    public int getCanhB(){
-        return canhB.get();
-    }
-    public IntegerProperty canhCProperty() {
-        return canhC;
+    public DoubleProperty aYProperty() {
+        return Ay;
     }
 
-    public void setCanhC(int canhC) {
-        this.canhC.setValue(canhC);
+    public void setAy(double y) {
+        this.Ay.setValue(y);
     }
     
-    public int getCanhC(){
-        return canhC.get();
+    public double getAy(){
+        return Ay.get();
+    }
+    public DoubleProperty bXProperty() {
+        return Bx;
+    }
+
+    public void setBx(double x) {
+        this.Bx.setValue(x);
+    }
+    
+    public double getBx(){
+        return Bx.get();
+    }
+    
+    public DoubleProperty bYProperty() {
+        return By;
+    }
+
+    public void setBy(double x) {
+        this.By.setValue(x);
+    }
+    
+    public double getBy(){
+        return By.get();
     }
     
     public Triangle(){}
-    public Triangle(int a, int b, int c){
-        this.canhA.setValue(a);
-        this.canhB.setValue(b);
-        this.canhC.setValue(c);
+    public Triangle(double a, double b, double c,double d){
+        this.Ax.setValue(a);
+        this.Ay.setValue(b);
+        this.Bx.setValue(c);
+        this.By.setValue(d);
     }
+    public Triangle(double x, double y, String mau, double a, double b, double c,double d){
+        setPosX(x);
+        setPosY(y);
+        setMau(mau);
+        this.Ax.setValue(a);
+        this.Ay.setValue(b);
+        this.Bx.setValue(c);
+        this.By.setValue(d);
+    }
+    
     public String toString(){
         return "Triangle";
     }
