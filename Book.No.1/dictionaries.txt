@@ -1,0 +1,19 @@
+﻿school	truong
+yellow	mau vang
+green	mau xanh
+white	trang
+name	ten
+why	tai sao
+black	mau den
+what	gi?
+how	nhu the nao
+music	am nhac
+class	lop
+hi	xin chao
+where	o dau
+he	anh ấy
+go	di
+hot	nóng
+child	tre em
+bye	tam biet
+hello	xin chao

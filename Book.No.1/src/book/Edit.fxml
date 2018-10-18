@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="477.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="book.EditController">
+   <children>
+      <Label layoutX="35.0" layoutY="154.0" prefHeight="35.0" prefWidth="96.0" styleClass="ADD" text="English        :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="206.0" prefHeight="35.0" prefWidth="96.0" styleClass="ADD" text="Vietnamese:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tEdit2" layoutX="136.0" layoutY="154.0" maxWidth="408.0" prefHeight="35.0" prefWidth="408.0" promptText="Nhập từ thay thế tại đây..." styleClass="ADD">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </TextField>
+      <TextArea fx:id="tViet" layoutX="136.0" layoutY="206.0" maxHeight="600.0" maxWidth="408.0" prefHeight="255.0" prefWidth="408.0" promptText="Nhập từ tiếng việt tại đây..." styleClass="ADD" />
+      <TextField fx:id="tEdit1" layoutX="136.0" layoutY="101.0" maxWidth="408.0" prefHeight="35.0" prefWidth="408.0" promptText="Nhập từ cần thay thế tại đây..." styleClass="ADD">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="35.0" layoutY="101.0" prefHeight="35.0" prefWidth="96.0" styleClass="ADD" text="English        :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label id="welcome-text" layoutX="30.0" layoutY="14.0" prefHeight="73.0" prefWidth="514.0" styleClass="ADD" text="Edit Dictionary" />
+   </children>
+</AnchorPane>
